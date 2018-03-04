@@ -1,8 +1,10 @@
 package io.zipcoder.interfaces;
 
+import java.util.ArrayList;
+
 public class Students extends People{
 
-    private static final Students INSTANCE = new Students();
+    private static final People<Student> INSTANCE = new Students();
 
     private Students() {
 
@@ -48,4 +50,7 @@ public class Students extends People{
         return INSTANCE;
     }
 
+    ArrayList<People> getArray() {
+        return this.personList;
+    }
 }

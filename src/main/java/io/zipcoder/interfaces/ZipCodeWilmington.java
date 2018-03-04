@@ -8,7 +8,7 @@ public class ZipCodeWilmington extends People {
     Instructors instructors = Instructors.getInstance();
 
     void hostLecture(Teacher teacher, double numberOfHours){
-        Student[] studentsList = students.personList.toArray(new Student[students.personList.size()]);
+        Student[] studentsList = students.personList.toArray(new Student[students.getCount()]);
         teacher.lecture(studentsList, numberOfHours);
     }
 
